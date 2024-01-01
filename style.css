@@ -4,32 +4,157 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;  
 }
-
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    background-color:  hsla(0, 36%, 70%, 50%);
-}
-
-.container{
+/*
+html, body{
+    background: linear-gradient(315deg, #fff 0%, #dee4eb 74%); 
+    width: 100%;
+    height: 100%;
     display: flex;
+    place-items: center;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 20rem;
 }
 
-.box-icon{
-    display: inline-flex;
-    gap: 1rem;
-    background-color: white;
-    height: 50px;
-    width: 50px;
-    padding: .5rem;
-    justify-content: center;
-    align-items: center;
+.btn{
+    display: block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: white;
+    margin: 0 5px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover .icon{
+    color: white;
+}
+
+.btn:nth-child(1):hover .icon{
+    background-color: #4267b2;
 }
 
 
-.box-icon p{
-    display: none;
+
+.icon{
+    display: inline;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+
+.icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.btn span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.btn:hover{
+    width: 200px;
+}
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+html, body {
+	background: linear-gradient(315deg, #fff 0%, #dee4eb 74%);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+.wrapper .btn {
+	display: block;
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin: 0 5px;
+	background: #fff;
+	border-radius: 50px;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+.wrapper .btn:hover .icon{
+	color: #fff;
+}
+.wrapper .btn:nth-child(1):hover .icon {
+	background: #4267b2;
+}
+.wrapper .btn:nth-child(2):hover .icon {
+	background: #e1306c;
+}
+.wrapper .btn:nth-child(3):hover .icon {
+	background: #1da1f2;
+}
+.wrapper .btn:nth-child(4):hover .icon {
+	background: black;
+}
+.wrapper .btn:nth-child(5):hover .icon {
+	background: #ff0000;
+}
+
+.btn:nth-child(6):hover .icon{
+    background: #05a354;
+}
+
+.wrapper .btn .icon {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	line-height: 60px;
+	text-align: center;
+	transition: all 0.3s ease-out;
+}
+.wrapper .btn .icon i {
+	font-size: 25px;
+	line-height: 60px;
+	transition: all 0.3s ease-out;
+}
+.wrapper .btn span {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 60px;
+	margin-left: 10px;	
+}
+.wrapper .btn:hover {
+	width: 200px;
+}
+.wrapper .btn:nth-child(1):hover span {
+	color: #4267b2;
+}
+.wrapper .btn:nth-child(2):hover span {
+	color: #1da1f2;
+}
+.wrapper .btn:nth-child(3):hover span {
+	color: #e1306c;
+}
+.wrapper .btn:nth-child(4):hover span {
+	color: #ff0000;
+}
+.wrapper .btn:nth-child(5):hover span {
+	color: #05a354;
+}
+
+.wrapper .btn:nth-child(6):hover span{
+    color: #05a354;
 }
